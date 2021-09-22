@@ -2,6 +2,13 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+cogs = [music]
+
+client = commands.Bot(command_prefix='?', intents = discord.Intents.all())
+
+for i in range(len(cogs)):
+  cogs[i].setup(client)
+
 
 client.on('message', roodx=>{
   var rr = ['hi','hello','waht','good','sad'];
